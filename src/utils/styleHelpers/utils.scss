@@ -1,0 +1,25 @@
+// GLOBAL VARS
+$lato-font: "Lato", sans-serif;
+$roboto-font: "Roboto", sans-serif;
+
+// GLOBAL MIXINS
+@mixin mobile {
+    //this handles mobile and tablet
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    //this handles mobile and tablet
+    @media (min-width: 769px) and (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin laptop-min {
+    //this handles mobile and tablet
+    @media (min-width: 769px) {
+        @content;
+    }
+}
