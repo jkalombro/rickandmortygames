@@ -1,0 +1,23 @@
+@import "../../utils/utils.scss";
+
+section.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 80vh;
+
+    .home-content-wrapper {
+        display: flex;
+        flex-direction: row;
+
+        img {
+            animation: shakeY 10s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    h1 {
+        color: $text-light;
+    }
+}

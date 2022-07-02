@@ -1,7 +1,8 @@
 import React from "react";
+import Loading from "../../components/Loading";
 
 const GamesPage = () => {
-    return <div>GamesPage</div>;
+    return <Loading />;
 };
 
 export default GamesPage;
