@@ -1,5 +1,21 @@
-@import "./utils/styleHelpers/utils.scss";
+@import "./utils/utils.scss";
+
+body {
+    font-family: $text-font;
+    background-color: #000;
+    margin: 0px;
+}
+
+a {
+    color: $text-light;
+    text-decoration: none;
+
+    &:hover {
+        color: $lightblue;
+    }
+}
 
 .App {
-    font-family: $text-font;
+    width: 100vw;
+    min-height: 100vh;
 }

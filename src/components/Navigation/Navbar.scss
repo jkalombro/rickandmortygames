@@ -1,0 +1,65 @@
+@import "../../utils/utils.scss";
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.brand-col svg {
+    width: 200px;
+    height: auto;
+}
+
+ul.menu-col {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    text-decoration: none;
+
+    li {
+        display: block;
+        margin-left: 3rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    li.menu-selected {
+        a {
+            color: $lightgreen;
+        }
+    }
+}
+
+@include mobile {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 3rem;
+    }
+
+    ul.menu-col {
+        li {
+            margin-left: 2.5rem;
+            font-size: 0.9rem;
+
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+
+    .brand-col,
+    .menu-col {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
