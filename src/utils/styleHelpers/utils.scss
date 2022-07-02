@@ -1,6 +1,11 @@
 // GLOBAL VARS
-$lato-font: "Lato", sans-serif;
-$roboto-font: "Roboto", sans-serif;
+$text-font: "Nunito", sans-serif;
+
+//COLORS
+$darkgreen: #208d45;
+$green: #5cad4a;
+$yellowgreen: #a7cb54;
+$darkblue: #24325fff;
 
 // GLOBAL MIXINS
 @mixin mobile {
